@@ -100,6 +100,12 @@ export const sections = [
         icon: 'portfolio',
       },
       {
+        title: 'Portfolio QR Code',
+        description: 'Open or download the branded QR code for sharing this portfolio website.',
+        href: publicAsset('yellow-spoon-portfolio-qr.svg'),
+        icon: 'qr',
+      },
+      {
         title: 'Google Reviews',
         description: 'See what customers are saying about their experiences with Yellow Spoon.',
         href: 'https://www.google.com/search?q=yellow+spoon+bengaluru+reviews',

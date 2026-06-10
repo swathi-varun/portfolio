@@ -9,6 +9,7 @@ import {
   MapPin,
   MessageCircle,
   Phone,
+  QrCode,
   Star,
   Youtube,
 } from 'lucide-react';
@@ -23,6 +24,7 @@ const iconMap = {
   message: MessageCircle,
   phone: Phone,
   portfolio: IdCard,
+  qr: QrCode,
   reviews: Star,
   website: Globe,
   whatsapp: MessageCircle,
