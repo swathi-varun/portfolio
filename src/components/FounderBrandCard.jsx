@@ -1,12 +1,13 @@
 import { motion } from 'framer-motion';
 import { Award, Leaf, MapPin, ShieldCheck, Wheat } from 'lucide-react';
+import { publicAsset } from '../utils/assets';
 
 const highlightIcons = [Leaf, Wheat, ShieldCheck, Award];
 const fruitAssetMap = {
-  almond: '/dryfruit-almond.png',
-  cashew: '/dryfruit-cashew.png',
-  raisin: '/dryfruit-raisin.png',
-  pistachio: '/dryfruit-pistachio.png',
+  almond: publicAsset('dryfruit-almond.png'),
+  cashew: publicAsset('dryfruit-cashew.png'),
+  raisin: publicAsset('dryfruit-raisin.png'),
+  pistachio: publicAsset('dryfruit-pistachio.png'),
 };
 const fallingPieces = [
   { type: 'cashew',    left: '7%',  size: 86, duration: '11.5s', delay: '-1.5s',  driftX: '18px',  spin: '240deg',  start: '0px',   travel: '950px' },
@@ -31,7 +32,7 @@ export function FounderBrandCard({ founder }) {
       whileHover={{ y: -3, transition: { type: 'spring', stiffness: 260, damping: 24 } }}
     >
       <img
-        src="/watermark-1.png"
+        src={publicAsset('watermark-1.png')}
         alt=""
         aria-hidden="true"
         className="ys-section-mark pointer-events-none absolute -right-28 -top-28 w-80 max-w-none"

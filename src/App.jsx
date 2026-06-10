@@ -5,6 +5,7 @@ import { FounderHero } from './components/FounderHero';
 import { FounderSnapshot } from './components/FounderSnapshot';
 import { LinkSection } from './components/LinkSection';
 import { founder, sections, snapshot } from './data/linksData';
+import { publicAsset } from './utils/assets';
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -31,7 +32,7 @@ function App() {
       {showIntro ? (
         <div className="ys-intro">
           <div className="ys-intro-panel">
-            <img src="/logo.jpg" alt="Yellow Spoon logo" className="ys-intro-logo" />
+            <img src={publicAsset('logo.jpg')} alt="Yellow Spoon logo" className="ys-intro-logo" />
             <div className="ys-intro-copy">
               <p className="ys-intro-kicker">Founder Portfolio</p>
               <h1>Yellow Spoon</h1>
@@ -50,7 +51,7 @@ function App() {
         <div className="mx-auto w-full max-w-6xl px-4 pt-4 sm:px-5 lg:px-6 lg:pt-6">
           <div className="ys-navbar">
             <a className="ys-navbar-brand" href="#home">
-              <img src="/logo.jpg" alt="Yellow Spoon logo" className="ys-navbar-logo" />
+              <img src={publicAsset('logo.jpg')} alt="Yellow Spoon logo" className="ys-navbar-logo" />
               <span>
                 <strong>Swathi Varun</strong>
                 <small>Founder of Yellow Spoon</small>
@@ -92,13 +93,13 @@ function App() {
       <main className="relative mx-auto flex min-h-screen w-full min-w-0 max-w-6xl flex-col gap-5 px-4 pb-4 pt-28 sm:px-5 sm:pt-32 lg:px-6 lg:pb-6">
         <div className="ys-top-glow pointer-events-none absolute inset-x-0 top-0 -z-10 h-[34rem]" />
         <img
-          src="/watermark-2.png"
+          src={publicAsset('watermark-2.png')}
           alt=""
           aria-hidden="true"
           className="ys-floating-mark pointer-events-none absolute -right-32 top-10 -z-10 hidden w-[34rem] max-w-none lg:block"
         />
         <img
-          src="/watermark-2.png"
+          src={publicAsset('watermark-2.png')}
           alt=""
           aria-hidden="true"
           className="ys-floating-mark ys-floating-mark--left pointer-events-none absolute -left-36 top-[42rem] -z-10 hidden w-[30rem] max-w-none rotate-180 lg:block"

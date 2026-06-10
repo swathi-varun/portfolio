@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { LinkCard } from './LinkCard';
+import { publicAsset } from '../utils/assets';
 
 export function LinkSection({ section }) {
   return (
@@ -12,7 +13,7 @@ export function LinkSection({ section }) {
       transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
     >
       <img
-        src="/watermark-1.png"
+        src={publicAsset('watermark-1.png')}
         alt=""
         aria-hidden="true"
         className="ys-section-mark ys-section-mark--soft pointer-events-none absolute -right-44 -top-48 w-[30rem] max-w-none"

@@ -1,3 +1,5 @@
+import { publicAsset } from '../utils/assets';
+
 export const founder = {
   name: 'Swathi Varun',
   title: 'Founder @ Yellow Spoon',
@@ -7,7 +9,7 @@ export const founder = {
     'Yellow Spoon products are crafted without preservatives, additives, or refined sugar, positioning every snack as a lifestyle choice for gifting, family moments, and daily healthy indulgence.',
     'The brand is recognized as an award-winning name with appreciations for bringing together quality, quantity, nourishment, and taste.',
   ],
-  initials: '/logo.jpg',
+  initials: publicAsset('logo.jpg'),
   brand: 'Yellow Spoon',
   location: 'No. 1000, SLN Complex, 1st Floor, 3rd Block, Banashankari 3rd Stage, Bengaluru - 560085',
   email: 'yellowspoonoffice@gmail.com',
@@ -88,13 +90,13 @@ export const sections = [
       {
         title: 'Product Catalogue',
         description: 'Browse our complete collection of healthy food products, gift options, and specialty offerings.',
-        href: '/ProductCatalogue.pdf',
+        href: publicAsset('ProductCatalogue.pdf'),
         icon: 'catalogue',
       },
       {
         title: 'Founder Portfolio',
         description: 'Learn about the vision, journey, and achievements behind the Yellow Spoon brand.',
-        href: '/Foundersportfolio.pdf',
+        href: publicAsset('Foundersportfolio.pdf'),
         icon: 'portfolio',
       },
       {

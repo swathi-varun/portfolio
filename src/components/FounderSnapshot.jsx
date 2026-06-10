@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Mail, MapPin, MessageCircle, Phone } from 'lucide-react';
+import { publicAsset } from '../utils/assets';
 
 const iconMap = {
   mail: Mail,
@@ -52,7 +53,7 @@ export function FounderSnapshot({ snapshot }) {
       transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
     >
       <img
-        src="/watermark-2.png"
+        src={publicAsset('watermark-2.png')}
         alt=""
         aria-hidden="true"
         className="ys-section-mark ys-section-mark--soft pointer-events-none absolute -bottom-36 -left-40 w-96 max-w-none"

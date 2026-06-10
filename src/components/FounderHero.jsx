@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Sparkles } from 'lucide-react';
 import { FounderBrandCard } from './FounderBrandCard';
 import { SocialBar } from './SocialBar';
+import { publicAsset } from '../utils/assets';
 
 const container = {
   hidden: {},
@@ -24,7 +25,7 @@ export function FounderHero({ founder }) {
       viewport={{ once: true, amount: 0.1 }}
     >
       <img
-        src="/watermark-2.png"
+        src={publicAsset('watermark-2.png')}
         alt=""
         aria-hidden="true"
         className="ys-section-mark pointer-events-none absolute -bottom-40 -right-44 w-[34rem] max-w-none"
@@ -32,7 +33,7 @@ export function FounderHero({ founder }) {
       <motion.div className="relative min-w-0" variants={container}>
         <motion.div className="flex flex-wrap items-center gap-4 sm:flex-nowrap sm:gap-5" variants={item}>
           <img
-            src="./swathi varun.jpg"
+            src={publicAsset('swathi varun.jpg')}
             alt="Swathi Varun"
             className="h-24 w-24 shrink-0 rounded-[1.45rem] border-4 border-yellow-400 object-cover object-center shadow-[0_18px_48px_-24px_rgba(234,179,8,0.5)] sm:h-28 sm:w-28 lg:h-32 lg:w-32"
           />
